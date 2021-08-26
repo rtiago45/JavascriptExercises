@@ -59,7 +59,7 @@ function add(string){
     return sum + sum2;
  }
 
-console.log(add('5+7'));
+console.log(add('12+5'));
 
 
 
