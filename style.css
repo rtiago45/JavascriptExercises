@@ -1,0 +1,17 @@
+body {
+
+    margin-left: 0;
+    padding: 0;
+}
+
+h1, h2, ul, p{
+    text-align: center;
+}
+
+.estilo-2 ul li{
+    list-style: none;
+}
+
+#posicao-video {
+    margin-left: 35%;
+}
