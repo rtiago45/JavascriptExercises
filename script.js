@@ -61,4 +61,59 @@ function add(string){
 console.log(add('12+5'));
 
 
+//Write a function nand that takes two Boolean values. If both values are true, the result should be false. In the other cases the return should be true.
+
+function nand(value1, value2){
+    if(value1 === true && value2 === true){
+        return false;
+    } else {
+        return true;
+    }
+}
+
+console.log(nand(2+2 === 5, 3+5 === 8));
+
+
+// Write a function isEven that checks if a passed number is even. If the given number is even, true should be returned, otherwise false.
+
+function isEven(value){
+    if(value % 2 === 0){
+        console.log("Par");
+        return true;
+    }
+    console.log("Impar");
+    return false;
+}
+
+console.log(isEven(30));
+
+// Write a function unequal that checks 3 values for strict inequality. The function should return true if all three parameters are strict unequal. Otherwise false.
+
+function unequal(x,y,z){
+    if(x !== y && x !== z && y !== z){
+    return true;
+    }
+    return false;
+}
+
+console.log(unequal(3,2,true));
+
+// Write a function repdigit that determines whether a two-digit decimal is a repdigit or not. 
+// If the decimal is a repdigit, 'Repdigit!' should be returned, otherwise 'No Repdigit!'
+
+
+function repdigit(n) {
+    let ones = n % 10;
+    let tens = Math.floor(n / 10);
+    if (ones === tens) {
+      return 'Repdigit!';
+    }
+    return 'No Repdigit!';
+}
+
+console.log(repdigit(55));
+
+
+
+
 
