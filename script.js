@@ -113,6 +113,46 @@ function repdigit(n) {
 
 console.log(repdigit(55));
 
+//Write a function addWithSurcharge that adds two amounts with surcharge. For each amount less than or equal to 10, the surcharge is 1.
+// For each amount greater than 10 and less than or equal to 20, the surcharge is 2. For each amount greater than 20, the surcharge is 3.
+
+function addWithSurcharge(value1, value2){
+    if(value1 <= 10){
+        value1++;
+    }
+    else if(value1 === 10 && value1 <= 20){
+        value1 +=2;
+    }
+    else {
+        value1 +=3;
+    }
+
+    if(value2 <= 10){
+        value2++;
+    }  
+    else if(value2 === 10 && value2 <= 20){
+        value2 += 2;
+    }
+    else if(value2 > 20) {
+        value2 += 3;
+    } else {
+        console.log('Digite um dígito correto.');
+    }
+    let result = value1 + value2;
+    return result;
+}
+
+console.log(addWithSurcharge(10,21));
+
+// Write a function getLastElement that takes an array and returns the last element of the array.
+
+function getLastElement(array){
+    let newArray = array[array.length -1]
+    return newArray;
+}
+console.log(getLastElement([1,5,32,18,3,45,56]));
+
+
 
 
 
