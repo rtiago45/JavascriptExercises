@@ -152,6 +152,30 @@ function getLastElement(array){
 }
 console.log(getLastElement([1,5,32,18,3,45,56]));
 
+//Write a function rotate that rotates the elements of an array. All elements should be moved one position to the left.
+// The 0th element should be placed at the end of the array. The rotated array should be returned.
+
+
+
+function rotate(array){
+    let itemOff = array.shift()
+    array.push(itemOff)
+    return array
+}
+
+console.log(rotate([1, 'b', 'c', 37]));
+
+//
+
+
+// function add(array, nova){
+//     let comparar = nova.indexOf()
+    
+//     let incluir = array.includes(comparar)
+//     let newarray = array.split(incluir)
+
+//     return newarray 
+// }
 
 
 
