@@ -193,3 +193,26 @@ function concatUp(array1, array2){
         return array3
     }
 }
+
+// Write a function halve that copies the first half of an array. With an odd number of array elements, the middle element should belong to the first half.
+
+function halve(array){
+
+    if(array.length % 2 === 1){
+        if(array.length >= 5){
+            let odd = array.length -= 2
+            array.slice(0, odd)
+            return array
+        }
+        let odd = array.length -= array.length % 2 === 1
+        array.slice(0, odd)
+        return array
+    } 
+    let metadeArray = array.length / 2
+    let metade = array.slice(0, metadeArray)
+    return metade
+      
+}
+console.log(halve([1, 2, 3, 4, 5]));
+
+//
