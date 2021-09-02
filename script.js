@@ -165,19 +165,15 @@ function rotate(array){
 
 console.log(rotate([1, 'b', 'c', 37]));
 
-//
+//Write a function add that adds an element to the end of an array. However, the element should only be added if it is not already in the array.
 
-
-// function add(array, nova){
-//     let comparar = nova.indexOf()
-    
-//     let incluir = array.includes(comparar)
-//     let newarray = array.split(incluir)
-
-//     return newarray 
-// }
-
-
-
-
-
+function addElement(array, a){
+    let tem = array.includes(a)
+    if(!tem){
+        array.push(a)
+        return array
+    }
+    return array
+  }
+  
+console.log(addElement([1, 2], 3))
