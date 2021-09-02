@@ -177,3 +177,19 @@ function addElement(array, a){
   }
   
 console.log(addElement([1, 2], 3))
+
+//Write a function concatUp that concatenate two arrays. The longer array should be appended to the shorter array.
+// If both arrays are equally long, the second array should be appended to the first array.
+
+function concatUp(array1, array2){
+    if(array1.length > array2.length){
+        let array3 = array2.concat(array1)
+        return array3
+    } else if (array1.length === array2.length){
+        let array3 = array1.concat(array2)
+        return array3
+    } else {
+        let array3 = array1.concat(array2)
+        return array3
+    }
+}
