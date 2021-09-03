@@ -215,4 +215,22 @@ function halve(array){
 }
 console.log(halve([1, 2, 3, 4, 5]));
 
+//Write a function list that takes an array of words and returns a string by concatenating the words in the array, separated by commas and - the last word - by an 'and'.
+// An empty array should return an empty string.
+
+function list(array){
+    if(array.length === 0){
+        return ""
+    } else if(array.length === 1){
+        let newArray = array.toString()
+        return newArray
+    } else if(array.length >= 2){
+        let wordsExLast = array.slice(0, array.length - 1);
+        let lastWord = array[array.length - 1];
+        return wordsExLast.join(', ') + ' and ' + lastWord;
+    } 
+}
+
+console.log(list(['C', 'C++', 'Python', 'PHP']));
+
 //
