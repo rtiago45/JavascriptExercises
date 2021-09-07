@@ -6,24 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicios JS</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .estilo2 {
+            background: #161a1d;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+    </style>
+    
     <script src="script.js" defer></script>
+    <script>
+        function modificaClasse(){
+            document.getElementById('pagina').className = 'estilo2'
+        }
+
+        function resetar() {
+            document.getElementById('pagina').className = 'style.css'
+            var square = document.getElementById('button');
+            square.style.backgroundColor = "transparent";
+            button.removeAttribute("disabled");
+        }
+
+    </script>
 </head>
-<body>
-    <section class="estilo">
-        <h1>Exercicios JavaScript</h1>
-        <h2>Aprendizado</h2>
-        <p>Me baseei no curso do Dev Dreamer, você pode acompanha-lo em: </p>
-        <div id="posicao-video">
-            <iframe width="600" height="400" src="https://www.youtube.com/embed/eVVyXoBueb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>    
-    </section>
 
-    <section class="estilo-2">
-        <h2>Exercicios</h2>
-        <ul>
-            <li><a href="https://www.jshero.net/en/success.html">Js Hero</a> </li>
-        </ul>
-    </section>
 
+<body id="pagina">
+    <div>
+        <button id="button" class="button" type="button" onclick="modificaClasse()">Modo Noturno</button>
+        <button id="button" class="button" type="button" onclick="resetar()">Claro</button>
+        <section class="estilo">
+            <h1>Exercicios JavaScript</h1>
+            <h2>Aprendizado</h2>
+            <p>Me baseei no curso do Dev Dreamer, você pode acompanha-lo em: </p>
+            <div id="posicao-video">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/eVVyXoBueb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>    
+        </section>
+
+        <section class="estilo-2">
+            <h2>Exercicios</h2>
+            <ul>
+                <li><a id="link_JS" href="https://www.jshero.net/en/success.html">Js Hero</a> </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
